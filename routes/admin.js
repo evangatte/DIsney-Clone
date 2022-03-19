@@ -3,17 +3,17 @@ const router = express.Router();
 
 router.get('/show', (req, res) => {
     res.render('admin/home', {
-        pageTitle: 'Admin'
+        pageTitle: 'Admin',
     });
 });
 
 router.get('/products', async (req, res) => {
-    const {ProductModel} = require('../src/db');
-    let products = await ProductModel.find({});
+    const { ProductModel } = require('../src/db');
+    const products = await ProductModel.find({});
 
     res.render('admin/products', {
         pageTitle: 'Admin - Products',
-        products: products
+        products,
     });
 });
 
@@ -23,8 +23,8 @@ router.post('newProduct', async (req, res) => {
     //     name: 'First Product'
     // });
     res.json({
-        params: req.params
-    })
+        params: req.params,
+    });
 });
 
 module.exports = router;

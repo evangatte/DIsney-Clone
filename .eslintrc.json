@@ -1,0 +1,23 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "import/newline-after-import": "off",
+        "indent": ["error", 4],
+        "global-require": "off",
+        "prefer-arrow-callback": "off"
+    },
+    "globals": {
+        "$": true
+    }
+}
+
