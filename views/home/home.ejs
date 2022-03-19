@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head') %>
+    </head>
+    <body>
+        <%- include('../partials/header') %>
+
+        <div class="container">
+            <h1><%= pageTitle %></h1>
+        </div>
+
+        <div class="container">
+
+            <% products.forEach(function (product) { %>
+            <p class="font-weight-bold">Product name:</p>
+            <p><%= product.name %></p>
+            <% }); %>
+            </p>
+        </div>
+
+        <%- include('../partials/footer') %>
+    </body>
+</html>
