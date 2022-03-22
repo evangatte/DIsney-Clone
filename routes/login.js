@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/show', (req, res) => {
     res.render('login/login', {
-        pageTitle: 'Login'
+        pageTitle: 'Login',
     });
 });
 
