@@ -7,22 +7,7 @@ import Popper from 'popper.js';
 window.$ = window.jQuery = require('jquery');
 
 $(() => {
-    // Attach listener to the #openModalBtn button
-    // $('#openModalBtn').click(function () {
-    //     $('#testModal').modal('show');
-    // });
-
-    $('#createAccountBtn').click(() => {
-        $('#signin-modal').modal('hide');
-    });
-
-    $('#signInToggle').click(() => {
-        $('#create-account-modal').modal('hide');
-    });
-
-    $('input').click(() => {
-
-    });
+    require('./js/navbar');
 });
 
 require('bootstrap');
