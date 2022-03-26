@@ -6,19 +6,112 @@
     <body>
         <%- include('../partials/header') %>
 
-        <div class="container">
-            <h1><%= pageTitle %></h1>
+        <div class="jumbotron mb-0 p-0 text-center d-flex align-items-center" id="top-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Revive & Renew This Spring</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Bounce Right into Easter with clothing, home decor and more inspired by the <br> Epcot International Flower & Garden Festival 2022!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><u>Shop Now</u></a>
+                    </div>
+                </div>        
+            </div>
         </div>
+        
+        <div class="jumbotron" id="second-container">
+            <div class="container border-dark d-flex align-items-center" id="fresh-threads">
+                <div class="text-container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Fresh Threads</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Kick back and enjoy the springtime sunshine with clothing for all!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><u>Shop All Clothing</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="container">
+            <div class="container mb-5 text-center">
+                <div class="row">
+                    <div class="col"><h1 class="font-weight-light">Save On Great Toys For Easter</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Fill up their baskets with all kinds of goodies!</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><a href="#"><u>Shop Spring Toy Savings</u></a></div>
+                </div> 
+            </div>
 
-            <% products.forEach(function (product) { %>
-            <p class="font-weight-bold">Product name:</p>
-            <p><%= product.name %></p>
-            <% }); %>
-            </p>
+
+            <div class="container d-flex align-items-center" id="toy-savings">
+                <div class="text-container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Plush</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Give them a little something extra huggable to smile about</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><u>Shop Now</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex mt-3 p-0" id="split-container">
+                <div class="split-image my-0 w-50 border">
+                    <div class="text-container pl-3">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Action Figures</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>SHop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-image my-0 w-50 p-0">
+                    <div class="text-container pl-3">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Dolls</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
-
         <%- include('../partials/footer') %>
     </body>
 </html>

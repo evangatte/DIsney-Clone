@@ -1,0 +1,63 @@
+#top-container {
+    background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
+     height: 77vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#top-container:hover {
+    transition: all 1s;
+    background-size: 110%;
+}
+
+#second-container {
+    background-color: #F4E0A5;
+}
+
+#fresh-threads {
+    background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
+    height: 50vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 130px;
+}
+
+#fresh-threads:hover {
+    transition: all 1s;
+    background-size: 110%;
+}
+
+#toy-savings {
+    background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
+    height: 55vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+#toy-savings:hover {
+    transition: all 1s;
+    background-size: 110%;
+}
+
+
+.split-image {
+    height: 50vh;
+    background-image: url("https://dummyimage.com/500x320/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+     background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.split-image:hover {
+    transition: all 1s;
+    background-size: 110%;
+}
