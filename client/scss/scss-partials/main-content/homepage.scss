@@ -52,7 +52,7 @@
     background-image: url("https://dummyimage.com/500x320/c4d8f3/aaa");
     overflow: hidden;
     background-position: center;
-     background-size: 100%;
+    background-size: 100%;
     display: flex;
     align-items: center;
 }
@@ -60,4 +60,195 @@
 .split-image:hover {
     transition: all 1s;
     background-size: 110%;
+}
+
+#easter-gift-container {
+    background-color: #F4E0A5;
+}
+
+.background-container {
+    height: 200px;
+    background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.background-container:hover {
+    transition: all 1s;
+    background-size: 110%;
+}
+
+#discover-yourself-container {
+    color: white;
+    background-image: url("https://dummyimage.com/700x400/9B1003/610C04");
+    height: 500px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#discover-yourself-container:hover {
+    transition: all 1s;
+    background-size: 110%;
+} 
+
+#encanto-container {
+    color: white;
+    background-image: url("https://dummyimage.com/700x400/9B1003/610C04");
+    height: 300px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+}
+
+#encanto-container:hover {
+     transition: all 1s;
+    background-size: 110%;   
+}
+
+#accessories-clothing-container {
+    height: 400px;
+}
+
+#accessories {
+    //height: 400px;
+    background-image: url("https://dummyimage.com/500x320/c4d8f3/aaa");
+    // overflow: hidden;
+    background-position: center;
+     background-size: 100%;
+}
+
+#accessories:hover {
+    transition: all 1s;
+    background-size: 110%;   
+}
+
+#clothing {
+    //height: 400px;
+    background-image: url("https://dummyimage.com/500x320/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+
+#clothing:hover {
+    transition: all 1s;
+    transform: scale(1.04);   
+}
+
+#empower-container {
+    height: 400px;
+}
+
+#empower-left {
+    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+
+#empower-middle {
+
+    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+#empower-right {
+    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+
+#empower-right:hover {
+    transition: all 1s;
+    background-size: 115%;    
+}
+
+
+
+#starwars-container {
+    height: 400px;
+}
+
+#starwars-left {
+    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+
+#starwars-left:hover {
+    transition: all 1s;
+    background-size: 115%;     
+}
+
+#starwars-middle {
+    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;    
+}
+
+#starwars-right {
+    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+
+#trending-magic-slider {
+    height: 400px;
+}
+
+#sunshine-ready-container {
+    height: 600px;
+}
+
+#little-splashes-container {
+    background-image: url("https://dummyimage.com/800x1000/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+#dry-off-container {
+    background-image: url("https://dummyimage.com/600x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%; 
+}
+
+#pack-it-up-container {
+    background-image: url("https://dummyimage.com/600x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%; 
+}
+
+#fifty-anniversary-banner {
+    margin-top: 100px;
+    height: 150px;
+}
+
+#shop-catagories .wrapper {
+    width: 95%;
+    //margin-left: 10px;
+    height: 180px;
+    background-image: url("https://dummyimage.com/300x300/c4d8f3/aaa");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;  
+}
+
+.space {
+    height: 500px;
 }

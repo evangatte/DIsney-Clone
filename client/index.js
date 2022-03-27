@@ -8,6 +8,7 @@ window.$ = window.jQuery = require('jquery');
 
 $(() => {
     require('./js/navbar');
+    require('./js/homepage');
 });
 
 require('bootstrap');
