@@ -3,12 +3,53 @@
 }
 
 #main-footer-container a {
+    font-weight: 300;
+    color: #222;
     text-decoration: none;
+    font-size: .875em;
+}
+
+#main-footer-container a:hover {
+    color: blue;
 }
 
 #main-footer-container ul li {
    list-style: none; 
 }
+
+#main-footer-container p {
+    color: #5b6c7d;
+    font-size: .7625rem;
+}
+
+#main-footer-container button {
+    color: #FFFF;
+    font-size: .75em;
+    font-weight: light;
+}
+
+
+.footer-policy-text ul li {
+    line-height: 30px;
+    color: #5b6c7d;
+    font-size: .80rem;
+}
+
+.footer-policy-text ul li a {
+    color: #5b6c7d;
+    font-size: .75rem;
+}
+
+.footer-policy-text ul li span {
+    color: #5b6c7d;
+    font-size: .75rem;
+}
+
+.footer-policy-text ul li::after {
+    content: "|";
+    padding: 0 6px;
+}
+
 
 
 
