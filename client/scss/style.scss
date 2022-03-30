@@ -1,13 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
-// navbar
+/* navbar */
 @import "./scss-partials/navbar/navbar.scss";
 
-
-
-
-
-
-//footer
+/* footer */
 @import "./scss-partials/footer/footer.scss";
 
+@import "./scss-partials/main-content/homepage.scss";

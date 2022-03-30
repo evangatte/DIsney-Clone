@@ -6,18 +6,347 @@
     <body>
         <%- include('../partials/header') %>
 
-        <div class="container">
-            <h1><%= pageTitle %></h1>
+        <div class="jumbotron mb-0 p-0 text-center d-flex align-items-center" id="top-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Revive & Renew This Spring</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Bounce Right into Easter with clothing, home decor and more inspired by the <br> Epcot International Flower & Garden Festival 2022!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><u>Shop Now</u></a>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        
+        <div class="jumbotron mb-0" id="second-container">
+            <div class="container border-dark d-flex align-items-center" id="fresh-threads">
+                <div class="text-container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Fresh Threads</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Kick back and enjoy the springtime sunshine with clothing for all!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><u>Shop All Clothing</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mb-5 text-center">
+                <div class="row">
+                    <div class="col"><h1 class="font-weight-light">Save On Great Toys For Easter</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Fill up their baskets with all kinds of goodies!</p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><a href="#"><u>Shop Spring Toy Savings</u></a></div>
+                </div> 
+            </div>
+
+
+            <div class="container d-flex align-items-center" id="toy-savings">
+                <div class="text-container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Plush</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Give them a little something extra huggable to smile about</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><u>Shop Now</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex mt-3 p-0" id="split-container">
+                <div class="split-image my-0 w-50 border">
+                    <div class="text-container pl-3">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Action Figures</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>SHop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-image my-0 w-50 p-0">
+                    <div class="text-container pl-3">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Dolls</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="container">
-
-            <% products.forEach(function (product) { %>
-            <p class="font-weight-bold">Product name:</p>
-            <p><%= product.name %></p>
-            <% }); %>
-            </p>
+        <div class="jumbotron mt-0 pb-5 px-0" id="easter-gift-container">
+            <div class="background-container mb-3 d-flex align-items-center text-center">
+                <div class="text-container w-100">
+                    <div class="row">
+                        <div class="col">
+                            <h2>East Gift Guide</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Add extra smiles with fun gift ideas like basket stuffers, toys, <br> accessories and items for a
+                                Spring Home Refresh!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><u>Shop Easter Gift Guide</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid mb-5 d-flex align-items-center mt-5" id="discover-yourself-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Discover Who You Are With <i>Turning Red</i></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Express yourself with apparel, accessories and more from the film, now streaming on Disney+</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#"><u>Shop Now</u></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="encanto-container">
+
+        </div>
+
+        <div class="container mt-5">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h1>Made For A Heart Of Gold</h1>
+                    <p>Discover trends designed for the princess within</p>
+                </div>
+            </div>
+
+
+            <div class="row" id="accessories-clothing-container">
+                <div class="col-sm-4" id="accessories">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Accessories</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><u>SHop Now</u></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-8 p-0">
+                    <div class="wrapper h-100 ml-2" id="clothing">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Clothing</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 text-center">
+                <div class="col">
+                    <h1 class="font-weight-light">Empower Her</h1>
+                </div>
+            </div>
+
+                            <!-- empower-section -->
+            <div class="row mt-5" id="empower-container">
+                <div class="col p-0" id="empower-left"></div>
+                <div class="col p-0">
+                    <div class="wrapper h-100 mx-2" id="empower-middle"></div>
+                </div>
+                <div class="col p-0" id="empower-right"></div>
+            </div>
+
+
+
+                             <!-- starwars section -->
+            <div class="row mt-5" id="starwars-container">
+                <div class="col p-0" id="starwars-left">awefawef</div>
+                <div class="col p-0">
+                    <div class="wrapper h-100 mx-2" id="starwars-middle"></div>
+                </div>
+                <div class="col p-0" id="starwars-right"></div>
+            </div>
+
+            <div class="row" id="trending-magic-slider">
+                <div class="col">trending magic slider</div>
+            </div>
+
+            <div class="row mt-5 text-center">
+                <div class="col">
+                    <h1 class="font-weight-light">Be Sunshine-Ready!</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p>Have the most fun under the sun with essentials like swimwear, towels and bags!</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <a href="#"><u>Shop All Swim</u></a>
+                </div>
+            </div>
+
+            <div class="row mt-5" id="sunshine-ready-container">
+                <div class="col" id="little-splashes-container">
+                    <div class="row text-center">
+                        <div class="col"><h3 class="font-weight-light">Little Splashes</h3></div>
+                    </div>
+                </div>
+
+                <div class="col border">
+                    <div class="row h-50">
+                        <div class="col p-0">
+                            <div class="wrapper h-100 ml-2" id="dry-off-container">awef</div>
+                        </div>
+                    </div>
+                    <div class="row h-50">
+                        <div class="col pt-2 p-0">
+                            <div class="wrapper h-100 ml-2" id="pack-it-up-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border border-dark" id="fifty-anniversary-banner">
+                <div class="col">
+
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col">
+                    <h1 class="font-weight-light">Shop Our Catagories</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p>From clothing to toys, there's a new favorite you'll love.</p>
+                </div>
+            </div>
+            
+            <div class="row" id="shop-catagories">
+                <div class="col-sm-3 p-0">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Clothing</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-0">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Clothing</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-0">
+                    <div class="wrapper">
+                         <div class="row">
+                            <div class="col">
+                                <h1>Clothing</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>                           
+                    </div>
+                </div>
+                <div class="col-sm-3 p-0">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Clothing</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><u>Shop Now</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="space"></div>
+        </div>
+
+
+
+
 
         <%- include('../partials/footer') %>
     </body>
