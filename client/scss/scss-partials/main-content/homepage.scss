@@ -5,16 +5,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 110%; 
+    }
 }
 
-#top-container:hover {
-    transition: all 1s;
-    background-size: 110%;
-}
 
 #second-container {
     background-color: #F4E0A5;
 }
+
 
 #fresh-threads {
     background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
@@ -24,12 +25,12 @@
     background-position: center;
     background-size: 100%;
     margin-bottom: 130px;
+    &:hover {
+        transition: all 1s;
+        background-size: 110%; 
+    }
 }
 
-#fresh-threads:hover {
-    transition: all 1s;
-    background-size: 110%;
-}
 
 #toy-savings {
     background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
@@ -38,12 +39,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 110%;
+    }
 
-}
-
-#toy-savings:hover {
-    transition: all 1s;
-    background-size: 110%;
 }
 
 
@@ -55,30 +55,29 @@
     background-size: 100%;
     display: flex;
     align-items: center;
+    &:hover {
+        transition: all 1s;
+        background-size: 110%; 
+    }
 }
 
-.split-image:hover {
-    transition: all 1s;
-    background-size: 110%;
-}
 
 #easter-gift-container {
     background-color: #F4E0A5;
+    .background-container {
+        height: 200px;
+        background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        &:hover {
+            transition: all 1s;
+            background-size: 110%;
+        }
+    }
 }
 
-.background-container {
-    height: 200px;
-    background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-
-.background-container:hover {
-    transition: all 1s;
-    background-size: 110%;
-}
 
 #discover-yourself-container {
     color: white;
@@ -88,12 +87,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 110%; 
+    }
 }
 
-#discover-yourself-container:hover {
-    transition: all 1s;
-    background-size: 110%;
-} 
 
 #encanto-container {
     color: white;
@@ -102,115 +101,111 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%; 
+    background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 110%;   
+    }
 }
 
-#encanto-container:hover {
-     transition: all 1s;
-    background-size: 110%;   
-}
 
 #accessories-clothing-container {
     height: 400px;
 }
 
-#accessories {
-    //height: 400px;
+#accessories { 
     background-image: url("https://dummyimage.com/500x320/c4d8f3/aaa");
-    // overflow: hidden;
     background-position: center;
      background-size: 100%;
+     &:hover {
+        transition: all 1s;
+        background-size: 110%;    
+     }
 }
 
-#accessories:hover {
-    transition: all 1s;
-    background-size: 110%;   
-}
+
 
 #clothing {
-    //height: 400px;
     background-image: url("https://dummyimage.com/500x320/c4d8f3/aaa");
     overflow: hidden;
     background-position: center;
     background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        transform: scale(1.04);    
+    }
 }
 
-#clothing:hover {
-    transition: all 1s;
-    transform: scale(1.04);   
-}
 
 #empower-container {
     height: 400px;
+
+    #empower-left {
+        background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    #empower-middle {
+        background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    #empower-right {
+        background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;
+        &:hover {
+            transition: all 1s;
+            background-size: 115%;   
+        }
+    }
 }
-
-#empower-left {
-    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;
-}
-
-#empower-middle {
-
-    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;
-}
-
-
-#empower-right {
-    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;
-}
-
-#empower-right:hover {
-    transition: all 1s;
-    background-size: 115%;    
-}
-
 
 
 #starwars-container {
     height: 400px;
+
+    #starwars-left {
+        background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;
+        &:hover {
+            transition: all 1s;
+            background-size: 115%;   
+        }
+    }
+
+    #starwars-middle {
+        background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;    
+    }
+
+    #starwars-right {
+        background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;
+    } 
 }
 
-#starwars-left {
-    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;
-}
-
-#starwars-left:hover {
-    transition: all 1s;
-    background-size: 115%;     
-}
-
-#starwars-middle {
-    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;    
-}
-
-#starwars-right {
-    background-image: url("https://dummyimage.com/500x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;
-}
 
 #trending-magic-slider {
     height: 400px;
 }
 
+
 #sunshine-ready-container {
     height: 600px;
 }
+
 
 #little-splashes-container {
     background-image: url("https://dummyimage.com/800x1000/c4d8f3/aaa");
@@ -220,12 +215,14 @@
     background-size: 100%; 
 }
 
+
 #dry-off-container {
     background-image: url("https://dummyimage.com/600x300/c4d8f3/aaa");
     overflow: hidden;
     background-position: center;
     background-size: 100%; 
 }
+
 
 #pack-it-up-container {
     background-image: url("https://dummyimage.com/600x300/c4d8f3/aaa");
@@ -234,21 +231,26 @@
     background-size: 100%; 
 }
 
+
 #fifty-anniversary-banner {
     margin-top: 100px;
     height: 150px;
 }
 
-#shop-catagories .wrapper {
-    width: 95%;
-    //margin-left: 10px;
-    height: 180px;
-    background-image: url("https://dummyimage.com/300x300/c4d8f3/aaa");
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;  
+
+#shop-catagories {
+    .wrapper {
+        width: 95%;
+        //margin-left: 10px;
+        height: 180px;
+        background-image: url("https://dummyimage.com/300x300/c4d8f3/aaa");
+        overflow: hidden;
+        background-position: center;
+        background-size: 100%;  
+    }
 }
 
-.space {
+
+.blank-space {
     height: 500px;
 }

@@ -1,3 +1,4 @@
+// make 2 seperate images scale at the same time
 $('#empower-left, #empower-middle').hover(
     function () {
         $('#empower-left, #empower-middle').css('transition', 'all 0.8s');

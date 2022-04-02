@@ -1,27 +1,29 @@
-.banner  {
-    background: #0075e3;
+.banner {
+    background-color: #0075e3;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 300;
+    
+    .banner-right {
+        font-size: 10px;
+    }
 }
 
 
-.banner .banner-right {
-    font-size: 10px;
-
+#top-nav {
+    a {
+        color: #444;
+        font-size: 15px;
+        font-weight: 300; 
+    }
 }
 
-#top-nav a {
-    color: #444;
-    font-size: 15px;
-    font-weight: 300;
+#second-nav {
+    a {
+        color: #222222; 
+    }
 }
 
-
-
-#second-nav a {
-    color: #222222;
-}
 
 #signin-modal-small-text {
     color: #222222;
