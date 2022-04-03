@@ -1,3 +1,66 @@
+.module-large-text {
+    color: $text-color;
+    font-weight: 300;
+
+    h1 {
+        font-weight: 300;
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        color: $text-color;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+}
+
+
+.module-small-text {
+    color: $text-color;
+    font-weight: 300;
+
+    h1 {
+        font-weight: 300;
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        color: $text-color;
+        font-size: 1em;
+        font-weight: 300; 
+    }
+}
+
+
+.white-background-text {
+    h1 {
+        font-weight: 300;
+        color: $text-color;
+    } 
+
+    p {
+        font-weight: 300;
+        color: $light-text-color;
+    }
+
+    a {
+        color: $text-color;
+        font-size: 1.2;
+        font-weight: 300;  
+    }
+}
+
+
+
+
 #top-container {
     background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
      height: 500px;
@@ -33,6 +96,7 @@
 
 
 #toy-savings {
+    color: $text-color;
     background-image: url("https://dummyimage.com/700x400/c4d8f3/aaa");
     height: 380px;
     overflow: hidden;
@@ -43,7 +107,6 @@
         transition: all 1s;
         background-size: 110%;
     }
-
 }
 
 
@@ -90,6 +153,10 @@
     &:hover {
         transition: all 1s;
         background-size: 110%; 
+    }
+
+    a {
+        color: white;
     }
 }
 
@@ -212,7 +279,11 @@
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%; 
+    background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 115%;    
+    } 
 }
 
 
@@ -220,7 +291,11 @@
     background-image: url("https://dummyimage.com/600x300/c4d8f3/aaa");
     overflow: hidden;
     background-position: center;
-    background-size: 100%; 
+    background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 115%;   
+    } 
 }
 
 
@@ -228,7 +303,11 @@
     background-image: url("https://dummyimage.com/600x300/c4d8f3/aaa");
     overflow: hidden;
     background-position: center;
-    background-size: 100%; 
+    background-size: 100%;
+    &:hover {
+        transition: all 1s;
+        background-size: 115%;   
+    } 
 }
 
 
@@ -241,16 +320,37 @@
 #shop-catagories {
     .wrapper {
         width: 95%;
-        //margin-left: 10px;
         height: 180px;
-        background-image: url("https://dummyimage.com/300x300/c4d8f3/aaa");
+        background-image: url("https://dummyimage.com/300x300/ff8c00/ff8c00");
         overflow: hidden;
         background-position: center;
-        background-size: 100%;  
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+
+        .flex-wrapper {
+            color: $text-color;
+            width: 100%;
+            &:hover {
+                transition: all 1s;
+                transform: scale(1.1);
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            a {
+                color: $text-color;
+                font-size: 0.9em;
+            }
+        }
     }
+
+
 }
 
 
 .blank-space {
-    height: 500px;
+    height: 100px;
 }
