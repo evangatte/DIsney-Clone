@@ -1,0 +1,53 @@
+#footer-banner-container {
+    background-color: #445fae;
+}
+
+
+#main-footer-container {
+    a {
+        font-weight: 300;
+        color: #222;
+        text-decoration: none;
+        font-size: .875em; 
+        &:hover {
+            color: blue;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    p {
+        color: #5b6c7d;
+        font-size: .7625rem; 
+    }
+
+    button {
+        color: #FFFF;
+        font-size: .75em;
+        font-weight: light; 
+    }
+}
+
+
+.footer-policy-text {
+    li {
+        line-height: 30px;
+        color: #5b6c7d;
+        font-size: .80rem;
+        &::after {
+            content: "|";
+            padding: 0 6px; 
+        }
+    }
+    span {
+        color: #5b6c7d;
+        font-size: .75rem;
+    }
+}
+
+
+
+
+
