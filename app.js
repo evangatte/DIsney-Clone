@@ -11,6 +11,7 @@ require('dotenv').config();
 
 app.set('view engine', 'ejs');
 app.use(express.static('dist'));
+app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.get('/', function (req, res) {
@@ -20,6 +21,7 @@ app.use('/login', require('./routes/login'));
 app.use('/home', require('./routes/home'));
 app.use('/product', require('./routes/product'));
 app.use('/admin', require('./routes/admin'));
+app.use('/registration', require('./routes/registration'));
 
 app.listen(process.env.PORT, () => {
     console.log(`Listening on port ${process.env.PORT || 3000}.`);
