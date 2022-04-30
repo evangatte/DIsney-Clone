@@ -1,9 +1,23 @@
 const express = require('express');
+const req = require('express/lib/request');
 const router = express.Router();
+const passport = require('passport');
 
-router.post('/', (req, res) => {
-    console.log(req.body.email);
-    console.log('haha')
+router.get('/show', (req, res) => {
+    res.send('authentication error');
+});
+
+router.post(
+    '/',
+    passport.authenticate('local', {
+        successRedirect: '/',
+        failureRedirect: '/login/show',
+    }),
+);
+
+router.get('/log-out', (req, res) => {
+    req.logout();
+    res.redirect('/');
 });
 
 module.exports = router;
