@@ -16,7 +16,16 @@
         font-size: 15px;
         font-weight: 300; 
     }
+    
+    .dropdown {
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
 }
+
 
 #second-nav {
     a {
