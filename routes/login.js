@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/show', (req, res) => {
-    res.render('login/login', {
-        pageTitle: 'Login',
-    });
+router.post('/', (req, res) => {
+    console.log(req.body.email);
+    console.log('haha')
 });
 
 module.exports = router;
