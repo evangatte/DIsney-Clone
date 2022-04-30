@@ -3,8 +3,6 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const User = require('../src/db').UserModel;
 
-
-
 router.post('/show', async (req, res) => {
     try {
         const hashedPassword = await bcrypt.hash(req.body.password, 10);
@@ -13,16 +11,14 @@ router.post('/show', async (req, res) => {
             lastName: req.body.lastName,
             email: req.body.email,
             password: hashedPassword,
-            birthdate: req.body.birthdate,
+            birthDate: req.body.birthDate,
         });
-        const user = await newUser.save();
+        await newUser.save();
     } catch (e) {
         console.log(e.message);
     }
 
     res.redirect('/home/show');
 });
-
-
 
 module.exports = router;
