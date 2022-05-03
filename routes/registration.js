@@ -3,13 +3,6 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const User = require('../src/db').UserModel;
 
-router.get('/', (req, res) => {
-    if (req.query.registration === 'false') {
-        res.render('registration/registration');
-    } else {
-        res.redirect('home/show')
-    }
-});
 
 router.post('/show', async (req, res) => {
     try {

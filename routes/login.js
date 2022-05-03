@@ -1,18 +1,17 @@
 const express = require('express');
-const req = require('express/lib/request');
-const { renderSync } = require('node-sass');
 const router = express.Router();
 const passport = require('passport');
 
 router.get('/', (req, res) => {
-    if (req.query.login === 'true') {
-        res.render('login/login');
-    } else if (req.query.login === 'false') {
+    if (req.query.registration === 'true') {
+        res.render('login/login', { registrationMessage: 'Registration Successful!' });
+    } else if (req.query.registration === 'false') {
         res.send('error');
     } else {
-        res.render('login/login');
+        res.render('login/login', { registrationMessage: 'Please Log In' });
     }
 });
+
 
 router.post(
     '/',
