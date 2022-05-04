@@ -5,23 +5,27 @@ let db;
 const UserSchema = new Schema({
     firstName: {
         type: String,
+        required: true,
     },
     lastName: {
         type: String,
+        required: true,
     },
     email: {
         type: String,
+        required: true,
     },
     password: {
         type: String,
+        required: true,
     },
     birthDate: {
         type: String,
+        required: true,
     },
 });
 
 exports.UserModel = mongoose.model('User', UserSchema);
-
 
 const ProductSchema = new Schema({
     ID: String,

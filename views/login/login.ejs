@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('../partials/head') %>
+  <%- include('../partials/head') %>
 </head>
+
 <body>
-<%- include('../partials/header') %>
+  <%- include('../partials/header') %>
 
-<div class="container">
-    <h1><%= pageTitle %></h1>
-</div>
 
-<%- include('../partials/footer') %>
+
+    <div class="container-fluid border-top">
+      <div class="container mt-5 w-75">
+        <h1 class="mb-4 text-center" id="login-message"><%= registrationMessage %> </h1>
+        <form action="/login" method="POST">
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" name="email" placeholder="Username Or Email Address">
+          </div>
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" name="password" placeholder="Password">
+          </div>
+          <div class="form-group mb-0">
+            <button class="btn btn-primary btn-lg py-3" style="background-color: #0075e3;" id="signin-btn">Sign
+              In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/main.bundle.js"></script> 
 </body>
+
 </html>
