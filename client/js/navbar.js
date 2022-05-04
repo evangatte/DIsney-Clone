@@ -16,3 +16,8 @@ $('#birthdate-input').focus(function () {
 }).focusout(function () {
     this.placeholder = 'Birth Date mm/dd/yy';
 });
+
+// User registration form validation
+$('#modal-registration-form :input').focusout(function () {
+    if ($(this).val() == '') { $(this).addClass('is-invalid'); }
+});
