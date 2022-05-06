@@ -9,17 +9,17 @@
 
         </div>
 
-        <div class="container mt-5 w-75">
-            <div class="row text-center mb-5">
-                <div class="col">
-                    <h3><a href="/admin/products">Product List</a></h3>
-                </div>
-                <div class="col">
+        <div class="container mt-5">
+            <div class="row text-center mb-5 border-bottom border-dark">
+                <div class="col admin-nav-link">
                     <h3><a href="/admin">Admin Home</a></h3>
+                </div>
+                <div class="col admin-nav-link">
+                    <h3><a href="/admin/products">Product List</a></h3>
                 </div>
 
             </div>
-            <form action="/admin/product/new">
+            <form class="mb-5 w-75 mx-auto" action="/admin/products/new" method="POST">
                 <div class="form-group">
                     <label for="productName">Name</label>
                     <input type="text" name="productName" class="form-control">

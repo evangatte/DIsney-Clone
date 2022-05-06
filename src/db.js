@@ -28,8 +28,19 @@ const UserSchema = new Schema({
 exports.UserModel = mongoose.model('User', UserSchema);
 
 const ProductSchema = new Schema({
-    ID: String,
-    name: String,
+    name: {
+        type: String,
+    },
+    description: {
+        type: String,
+    },
+    price: {
+        type: String,
+    },
+    image: {
+        type: String,
+    },
+
 });
 exports.ProductModel = mongoose.model('Product', ProductSchema);
 

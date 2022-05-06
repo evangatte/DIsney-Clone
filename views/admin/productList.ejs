@@ -7,12 +7,22 @@
         <%- include('../partials/header') %>
         <div class="container-fulid border-top"></div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h1>Product List</h1>
+        <div class="container mt-5">
+            <div class="row text-center border-bottom border-dark">
+                <div class="col admin-nav-link">
+                    <h3 class="admin-nav-link"><a href="/admin">Admin Home</a></h3>
+                </div>
+                <div class="col admin-nav-link">
+                    <h3><a href="/admin/products/new">Create New Product</a></h3>
                 </div>
             </div>
+            <div class="row mt-5 border text-center">
+                <div class="col border-right"><h4>Product</h4></div>
+                <div class="col border-right"><h4>Price</h4></div>
+                <div class="col border-right"><h4>Description</h4></div>
+                <div class="col"><h4>Image</h4></div>
+            </div>
         </div>
+            
     </body>
 </html>
