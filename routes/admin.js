@@ -1,4 +1,5 @@
 const express = require('express');
+const { find } = require('lodash');
 const router = express.Router();
 const Product = require('../src/db').ProductModel;
 
@@ -9,7 +10,7 @@ router.get('/', (req, res) => {
 router.get('/products', async (req, res) => {
     const products = await Product.find({});
 
-    res.render('admin/productList');
+    res.render('admin/productList', { products });
 });
 
 router.get('/products/new', (req, res) => {
@@ -30,5 +31,9 @@ router.post('/products/new', async (req, res) => {
         console.log(e.message);
     }
 });
-
+async function findProduct() {
+    const product = await Product.find({});
+    console.log(product);
+}
+// findProduct();
 module.exports = router;

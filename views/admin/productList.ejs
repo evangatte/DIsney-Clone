@@ -16,13 +16,21 @@
                     <h3><a href="/admin/products/new">Create New Product</a></h3>
                 </div>
             </div>
-            <div class="row mt-5 border text-center">
-                <div class="col border-right"><h4>Product</h4></div>
-                <div class="col border-right"><h4>Price</h4></div>
-                <div class="col border-right"><h4>Description</h4></div>
-                <div class="col"><h4>Image</h4></div>
+            <div class="row mt-5 text-center product-list-grid">
+                <div class="col border-bottom border-dark"><h3>Product</h3></div>
+                <div class="col border-bottom border-dark"><h3>Price</h3></div>
+                <div class="col border-bottom border-dark"><h3>Description</h3></div>
+                <div class="col border-bottom border-dark"><h3>Image</h3></div>
             </div>
+            <% products.forEach((product) => { %>
+                <div class="row border-bottom text-center product-list-grid">
+                    <div class="col-3 border-left border-right"><h6 class=""><%= product.name %></h6></div>
+                    <div class="col-3 py-2 border-right"><h6 class="my-0"><span>$</span><%= product.price %></h6></div>
+                    <div class="col-3 py-2 border-right text-break"><h6 class="my-0"><%= product.description %></h6></div>
+                    <div class="col-3 py-2 border-right"><h6 class="my-0"><img src="/images/productImages/<%= product.image %>" alt="" style="height: 50px; width: 50px;"></h6></div>
+                </div>
+            <% }) %> 
         </div>
-            
+        <script src="/main.bundle.js"></script> 
     </body>
 </html>
