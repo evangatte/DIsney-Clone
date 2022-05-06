@@ -9,10 +9,7 @@ router.get('/', (req, res) => {
 router.get('/products', async (req, res) => {
     const products = await Product.find({});
 
-    res.render('admin/productList', {
-        pageTitle: 'Admin - Products',
-        products,
-    });
+    res.render('admin/productList');
 });
 
 router.get('/products/new', (req, res) => {
