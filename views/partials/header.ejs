@@ -36,9 +36,24 @@
             <a class="navbar-brand" href="#"><img src="http://placekitten.com/150/40" alt=""></a>
       
       <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#signin-modal">Sign In | Sign up</a>
+        <% if (currentUser) { %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hi <%= currentUser.firstName %> !
+            </a>
+            <div class="dropdown-menu" aria-labelledby="userNavbarDropdown">
+              <a class="dropdown-item" href="#">Info & Settings</a>
+              <a class="dropdown-item" href="#">Order History</a>
+              <a class="dropdown-item" href="#">Wish List</a>
+              <a class="dropdown-item" href="/login/log-out">Sign Out</a>
+              <a class="dropdown-item" href="/admin">Admin Page</a>
+            </div>
           </li>
+        <% } else { %>
+          <li class="nav-item">
+             <a class="nav-link" href="#" data-toggle="modal" data-target="#signin-modal">Sign In | Sign up</a>
+          </li>
+        <% } %>
           <li class="nav-item">
               <a class="nav-link" href="#">My Wish List</a>
           </li>
@@ -107,12 +122,12 @@
       </div>
       <div class="row mb-2"><div class="col text-center"><h5 class="modal-title mx-auto" id="exampleModalLabel">Disney account</h5></div></div>
       <div class="modal-body">
-        <form action="#">
+        <form action="/login" method="POST">
           <div class="form-group w-75 mx-auto mb-2">
-            <input type="text" class="form-control" placeholder="Username Or Email Address">
+            <input type="text" class="form-control" name="email" placeholder="Username Or Email Address">
           </div>
           <div class="form-group mb-2">
-            <input type="text" class="form-control w-75 mx-auto" placeholder="Password">
+            <input type="text" class="form-control w-75 mx-auto" name="password" placeholder="Password">
           </div>
           <div class="form-group text-center mb-0">
             <button class="btn btn-primary btn-lg w-75 py-3" style="background-color: #0075e3;" id="signin-btn">Sign In</button>
@@ -144,24 +159,30 @@
       </div>
       <div class="row mb-2"><div class="col text-center"><h5 class="modal-title mx-auto" id="">Disney account</h5></div></div>
       <div class="modal-body">
-        <form action="#">
+        <form action="/registration/show" id="modal-registration-form" method="POST">
           <div class="form-group mb-2 w-75 mx-auto">
-            <input type="text" class="form-control" placeholder="First Name">
+            <input required type="text" id="firstNameInput" class="form-control" name="firstName" placeholder="First Name">
+            <div class="invalid-feedback">Please enter your first name.</div>
           </div>
           <div class="form-group mb-2 w-75 mx-auto">
-            <input type="text" class="form-control" placeholder="Last Name">
+            <input required type="text" id="lastNameInput" class="form-control" name="lastName" placeholder="Last Name">
+            <div class="invalid-feedback">Please enter your last name.</div>
           </div>
           <div class="form-group mb-2 w-75 mx-auto">
-            <input type="text" class="form-control" placeholder="Email Address">
+            <input required type="text" id="emailInput" class="form-control" name="email" placeholder="Email Address">
+            <div class="invalid-feedback">Please enter your email address.</div>
           </div>
           <div class="form-group mb-2 w-75 mx-auto">
-            <input type="text" class="form-control" placeholder="Password">
+            <input required type="text" id="passwordInput" class="form-control" name="password" placeholder="Password">
+            <div class="invalid-feedback">Please enter a password.</div>
           </div>
           <div class="form-group mb-2 w-75 mx-auto">
-            <input type="text" class="form-control" placeholder="Verify Password">
+            <input required type="text" id="verifyPasswordInput" class="form-control" name="verifyPassword" placeholder="Verify Password">
+            <div class="invalid-feedback">Please enter your new password again.</div>
           </div>
           <div class="form-group mb-2 w-75 mx-auto">
-            <input type="text" class="form-control" placeholder="Birth Date mm/dd/yy">
+            <input required type="text" class="form-control" id="birthDateInput" name="birthDate" placeholder="Birth Date mm/dd/yy">
+            <div class="invalid-feedback">Birth date is required.</div>
           </div>
 
           <div class="modal-container w-75 mx-auto mt-4">

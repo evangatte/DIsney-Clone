@@ -1,0 +1,61 @@
+.banner {
+    color: white;
+    background-color: #0075e3;
+    font-size: 15px;
+    font-weight: 300;
+    
+    .banner-right {
+        font-size: 10px;
+    }
+}
+
+
+#top-nav {
+    a {
+        color: #444;
+        font-size: 15px;
+        font-weight: 300; 
+    }
+    
+    .dropdown {
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+
+#second-nav {
+    a {
+        color: #222222; 
+    }
+}
+
+
+#signin-modal-small-text {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+#signin-modal-large-text {
+    color: #444;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#signin-btn {
+    font-size: 15px;
+    background-color: #0075e3;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+    border-width: 2px;
+}
