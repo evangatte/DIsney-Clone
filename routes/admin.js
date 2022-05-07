@@ -1,5 +1,4 @@
 const express = require('express');
-const { find } = require('lodash');
 const router = express.Router();
 const Product = require('../src/db').ProductModel;
 
